@@ -1,0 +1,8 @@
+[package]
+name = "ghost-dlc-fix"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+oozextract = "0.5.7"
+sha1_smol = "1.0.1"

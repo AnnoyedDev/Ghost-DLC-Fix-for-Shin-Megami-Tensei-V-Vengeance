@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+      <stop offset="0.4" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.75"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="redglow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" result="b"/>
+      <feFlood flood-color="#d0102a" flood-opacity="0.95"/>
+      <feComposite in2="b" operator="in" result="g"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+  <image href="steam_bg.jpg" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1920" height="1080" fill="url(#vig)"/>
+  <rect width="1920" height="1080" fill="url(#fade)"/>
+  <image href="steam_logo.png" x="460" y="70" width="1000" height="420" preserveAspectRatio="xMidYMid meet" filter="url(#shadow)"/>
+  <text x="960" y="700" text-anchor="middle" font-family="DejaVu Sans" font-weight="bold" font-style="oblique" font-stretch="condensed" font-size="170" letter-spacing="4" fill="#ffffff" filter="url(#redglow)">GHOST DLC FIX</text>
+  <text x="960" y="800" text-anchor="middle" font-family="DejaVu Sans" font-weight="bold" font-style="oblique" font-size="64" letter-spacing="8" fill="#ff3348" filter="url(#shadow)">( VOICE DLC )</text>
+  <line x1="610" y1="850" x2="1310" y2="850" stroke="#ff3348" stroke-opacity="0.7" stroke-width="3"/>
+  <text x="960" y="920" text-anchor="middle" font-family="DejaVu Sans" font-size="38" fill="#f2f2f2" filter="url(#shadow)">Fixes the fake Japanese / English voice "DLC" that blocks your save</text>
+  <text x="960" y="980" text-anchor="middle" font-family="Noto Sans CJK JP" font-weight="bold" font-size="34" fill="#d8d8d8" filter="url(#shadow)">日本語ボイスの「ニセDLC」でセーブが読めないバグを直す</text>
+  <text x="960" y="1040" text-anchor="middle" font-family="DejaVu Sans" font-size="26" fill="#a8a8a8" filter="url(#shadow)">Steam · Windows / Linux (Proton) / macOS</text>
+</svg>
